@@ -1,0 +1,76 @@
+.body {
+	
+	margin: 0;
+	padding: 0;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+}
+.header {
+	
+	height: 50px;
+	width: 100%;
+}
+.listcontainer {
+	
+	height: 100%;
+}
+.partslist li {
+	margin-top: 40px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	
+}
+.partslist {
+	display: grid;
+	grid-template-columns: 250px 250px 250px 250px;
+	grid-template-rows: 500px 500px 500px;
+	margin-top: 40px;
+	justify-content: center;
+    align-items: center;
+	
+}
+.text {
+	display: flex;
+    font-family: auto;
+    font-size: 32px;
+    margin-left: 20px;
+}
+.text em{
+	margin-right: 10px;
+}
+.partslist img {
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+}
+.partslist p {
+	font-size: 30px;
+}
+
+.partslist button {
+	font-size: 35px;
+	border-radius: 15px;
+	color: var(--tg-theme-button-color);
+	background-color: var(--tg-theme-button-text-color);
+}
+
+#form {
+	display: none;
+	text-align: center;
+}
+
+input {
+	width: 90%;
+	outline: none;
+	margin: 10px 5%;
+	padding: 15px 10px;
+	font-size: 14px;
+	border: 2px solid silver;
+	border-radius: 5px;
+}
+
+input:focus {
+	border-color: #db5d5d;
+}
