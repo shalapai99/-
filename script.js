@@ -1,14 +1,12 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-$(document).ready(function() {
-    $("#buythis").on("click", function() {
+$(document).on("click", "#buythis", function(){
         $(".listcontainer").css("display", "none");
         $("#form").css("display", "block");
-        $("#uname").val(tg.InitDataUnsafe.user.first.name + " " + tg.InitDataUnsafe.user.last_name);
     });
 
-    $("#order").on("click", function() {
+    $(document).on("click", "#order", function(){
         let name = $("#uname").val();
         let mail = $("#mail").val();
         let phone = $("#uphone").val();
@@ -23,7 +21,7 @@ $(document).ready(function() {
             alert("ошибка в номере телефона");
         }
     });
-});
+
 
 
 let data = {
