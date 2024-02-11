@@ -21,9 +21,10 @@ $(document).on("click", "#buythis", function(){
         if (phone.length < 3) {
             alert("ошибка в номере телефона");
         }
+
+        $(".listcontainer").css("display", "grid");
+        $("#form").css("display", "none");
     });
-
-
 
 let data = {
     name: name,
