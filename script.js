@@ -22,8 +22,8 @@ $(document).on("click", "#buythis", function(){
             alert("ошибка в номере телефона");
         }
 
-        $(".listcontainer").css("display", "grid");
-        $("#form").css("display", "none");
+        //$(".listcontainer").css("display", "grid");
+        //$("#form").css("display", "none");
     });
 
 let data = {
