@@ -1,3 +1,4 @@
+
 let tg = window.Telegram.WebApp;
 tg.expand();
 
@@ -28,7 +29,7 @@ let data = {
     name: name,
     email: mail,
     phone: phone
-}
+};
 
 tg.SendData(JSON.stringify(data));
 tg.close;
