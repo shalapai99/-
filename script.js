@@ -1,28 +1,30 @@
 let tg = window.Telegram.WebApp;
-let buy = document.getElementsById("buythis");
-let order = document.getElementById("order");
 tg.expand();
 
-buy.addEventListener("click", () =>{
-    document.getElementsByClassName("listcontainer").style.display = "none";
-    document.getElementById("form").style.display = "block";
-    document.getElementById("uname").value = tg.InitDataUnsafe.user.first.name + " " + tg.InitDataUnsafe.user.last_name;
+$(document).ready(function() {
+    $("#buythis").on("click", function() {
+        $(".listcontainer").css("display", "none");
+        $("#form").css("display", "block");
+        $("#uname").val(tg.InitDataUnsafe.user.first.name + " " + tg.InitDataUnsafe.user.last_name);
+    });
+
+    $("#order").on("click", function() {
+        let name = $("#uname").val();
+        let mail = $("#mail").val();
+        let phone = $("#uphone").val();
+        
+        if (name.length < 3) {
+            alert("ошибка в имени");
+        }
+        if (mail.length < 3) {
+            alert("ошибка в Email");
+        }
+        if (phone.length < 3) {
+            alert("ошибка в номере телефона");
+        }
+    });
 });
 
-order.addEventListener("click", () => {
-    let name = document.getElementById("uname").value;
-    let mail = document.getElementById("mail").value;
-    let phone = document.getElementById("uphone").value;
-    if (name.lenght < 3) {
-        alert("ошибка в имени");
-    }
-    if (mail.lenght < 3 ) {
-        alert("ошибка в Email");
-    }
-    if (phone.lenght < 3 ) {
-        alert("ошибка в номере телефона");
-    }
-});
 
 let data = {
     name: name,
