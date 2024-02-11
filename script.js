@@ -24,9 +24,8 @@ $(document).on("click", "#buythis", function(){
 
         //$(".listcontainer").css("display", "grid");
         //$("#form").css("display", "none");
-    });
-
-let data = {
+   
+    let data = {
     name: name,
     email: mail,
     phone: phone
@@ -34,3 +33,6 @@ let data = {
 
 tg.SendData(JSON.stringify(data));
 tg.close;
+    });
+
+
