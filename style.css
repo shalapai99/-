@@ -9,24 +9,20 @@ body {
 	width: 100%;
 }
 
-.header img {
-	width: 100%;
-	height: 10px;
-}
 .listcontainer {
 	height: 100%;
 }
 .partslist li {
 	margin-top: 13px;
-	padding: 10px;
-    	display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	flex-direction: column;
-    	box-shadow: 0px 1px 30px 0px #858585;
-    	border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 30px 0px #858585;
+    border-radius: 10px;
 	width: 180px;
-	
+	height: 280px;
 }
 .partslist {
 	display: grid;
@@ -49,16 +45,16 @@ body {
 	margin-right: 10px;
 }
 .partslist img {
-	width: 200px;
-	height: 200px;
-	margin-top: 10px;
+	width: 100px;
+	height: 100px;
+	margin-top: 5px;
 }
 .partslist p {
 	font-size: 30px;
 }
 
 .partslist button {
-	font-size: 35px;
+	font-size: 20px;
     border-radius: 15px;
     background: none;
     border-color: #5795A3;
