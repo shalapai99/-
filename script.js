@@ -1,4 +1,3 @@
-
 let tg = window.Telegram.WebApp;
 tg.expand();
 
@@ -8,9 +7,9 @@ $(document).on("click", "#buythis", function(){
     });
 
     $(document).on("click", "#order", function(){
-        let name = $("#uname").val();
-        let mail = $("#mail").val();
-        let phone = $("#uphone").val();
+ name = $("#uname").val();
+ mail = $("#mail").val();
+ phone = $("#uphone").val();
         
         if (name.length < 3) {
             alert("ошибка в имени");
