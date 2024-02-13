@@ -30,7 +30,7 @@ $(document).on("click", "#buythis", function(){
     phone: phone
 };
 
-tg.SendData(JSON.stringify(data));
+tg.sendData(JSON.stringify(data));
 tg.close;
     });
 
