@@ -17,8 +17,8 @@ body {
 	height: 100%;
 }
 .partslist li {
-	margin-top: 40px;
-    padding: 20px;
+	margin-top: 13px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,21 +29,21 @@ body {
 }
 .partslist {
 	display: grid;
-    /* grid-template-columns: 250px 250px 250px 250px; */
+    /* grid-template-columns: 250px 250px; */
     /* grid-template-rows: 500px 500px 500px; */
-    margin-top: 40px;
+    margin-top: 5px;
     justify-content: center;
     align-items: center;
     grid-template-areas: 'a a';
-    gap: 60px;
+    gap: 50px;
 	
 }
-.text {
+/* .text {
 	display: flex;
     font-family: auto;
     font-size: 32px;
     margin-left: 20px;
-}
+} */
 .text em{
 	margin-right: 10px;
 }
@@ -61,12 +61,15 @@ body {
     border-radius: 15px;
     background: none;
     border-color: #5795A3;
+	color: grey;
 }
 
 #form {
 	display: none;
 	text-align: center;
-	margin-top: 100px;
+	/* margin-top: 0px; */ 
+    width: 50%;
+    transform: translate(50%, 50%);
 }
 
 #form button {
