@@ -1,12 +1,16 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: grey;
+	color: var(--tg-theme-text-color);
 	background: white;
 }
 .header {
+	display: flex;
 	height: 50px;
 	width: 100%;
+	align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .listcontainer {
@@ -25,10 +29,11 @@ body {
     height: 219px;
 }
 .partslist {
-	display: grid;
+    display: grid;
     grid-template-columns: 96px;
     grid-template-rows: 200px 200px 200px 200px 200px 200px;
     margin-top: 5px;
+    margin-left: -50px;
     justify-content: center;
     align-items: center;
     grid-template-areas: 'a a';
@@ -45,7 +50,7 @@ em{
     margin-top: 5px;
 }
 .partslist p {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .partslist button {
