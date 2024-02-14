@@ -6,11 +6,13 @@ body {
 }
 .header {
 	display: flex;
-	height: 50px;
-	width: 100%;
-	align-items: center;
+    height: 50px;
+    width: 100%;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
+    background: dodgerblue;
+    color: white;
 }
 
 .listcontainer {
@@ -27,22 +29,23 @@ body {
     border-radius: 10px;
     width: 114px;
     height: 219px;
+    position: relative;
+    overflow: hidden;
 }
 .partslist {
     display: grid;
-    grid-template-columns: 96px;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
-    margin-top: 5px;
-    margin-left: -50px;
+    margin-top: 35px;
     justify-content: center;
     align-items: center;
     grid-template-areas: 'a a';
     gap: 50px;
+    padding: 0;
 	
 }
 
-em{
-	margin-right: 10px;
+.header p{
+	font-size: 20px;
+    font-style: normal;
 }
 .partslist img {
 	width: 85px;
@@ -51,14 +54,19 @@ em{
 }
 .partslist p {
 	font-size: 15px;
+    text-align: center;
 }
 
 .partslist button {
 	font-size: 20px;
-    border-radius: 15px;
     background: none;
-    border-color: #5795A3;
-	color: grey;
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    background: dodgerblue;
+    width: 100%;
+    padding: 10px;
 }
 
 #form {
@@ -70,9 +78,11 @@ em{
 }
 
 #form button {
-	padding: 5px;
-    width: 100px;
-    background: none;
+	border: none;
+    background: dodgerblue;
+    padding: 15px 40px;
+    color: white;
+    font-size: 20px;
 }
 
 input {
