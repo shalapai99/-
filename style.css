@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
+	background: white;
 }
 .header {
 	height: 50px;
@@ -35,13 +35,8 @@ body {
     gap: 50px;
 	
 }
-/* .text {
-	display: flex;
-    font-family: auto;
-    font-size: 32px;
-    margin-left: 20px;
-} */
-.text em{
+
+em{
 	margin-right: 10px;
 }
 .partslist img {
@@ -50,7 +45,7 @@ body {
 	margin-top: 5px;
 }
 .partslist p {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .partslist button {
