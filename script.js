@@ -28,6 +28,6 @@ $(document).on("click", "#buythis", function(){
         };
         
         tg.sendData(JSON.stringify(data));
-        tg.close;
+        tg.close();
     });
 
