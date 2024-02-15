@@ -1,4 +1,3 @@
-
 let tg = window.Telegram.WebApp;
 
 $(document).on("click", "#buythis", function(){
